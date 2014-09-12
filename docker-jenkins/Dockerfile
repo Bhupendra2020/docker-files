@@ -4,6 +4,7 @@ MAINTAINER Maluuba Infrastructure Team <infrastructure@maluuba.com>
 RUN apt-get update && apt-get clean
 RUN apt-get install -q -y openjdk-7-jre-headless && apt-get clean
 RUN apt-get install -q -y git
+RUN apt-get install -q -y valgrind
 RUN apt-get install -q -y libboost1.55-all-dev
 
 ADD http://mirrors.jenkins-ci.org/war/latest/jenkins.war /opt/jenkins.war
